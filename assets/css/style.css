@@ -1,0 +1,272 @@
+body {
+  font-weight: 700;
+  margin: 0 auto;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: #3f3f3f;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.text-white {
+  z-index: 6;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 55.8px;
+  padding-left: 79px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.category {
+  position: sticky;
+  top: 172px;
+  left: 0;
+  width: 180px;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.category-heading {
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+}
+
+.category-heading-item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.category-heading-item li {
+  position: relative;
+  font-family: "Arial";
+  font-size: 16px;
+  font-weight: 700;
+  color: #3f3f3f;
+  cursor: pointer;
+}
+
+.category-heading-item li::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -16px;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: #2FA597;
+  border-radius: 9999px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.category-heading-item li:hover::before {
+  opacity: 1;
+}
+
+.category-heading-item li.show::before {
+  opacity: 1;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+}
+
+.inner {
+  margin: 0 auto;
+}
+
+.section {
+  margin-left: 258px;
+}
+
+.section .content {
+  margin-top: 78px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.section .content.show {
+  opacity: 1;
+  height: auto;
+}
+
+.section .active-list {
+  padding-left: 90px;
+  position: relative;
+}
+
+.section .active-list::before {
+  background-color: #3F3F3F;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  left: 5px;
+  top: 23px;
+  width: 2px;
+  height: 100%;
+}
+
+.section .active-item {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.section .active-item::before {
+  content: 2022;
+}
+
+.section .active-item .day {
+  position: absolute;
+  left: -180px;
+}
+
+.section .active-item .pse {
+  width: 16px;
+  position: absolute;
+  left: -92px;
+  top: 0;
+  margin: auto 0;
+  padding-top: 7px;
+}
+
+.section .active-item .next {
+  margin-top: 73px;
+}
+
+.section .active-ttl .text {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21.79px;
+}
+
+.section .active-ttl .date {
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #D9D9D9;
+  margin-left: 8px;
+}
+
+.section .active-place {
+  background-color: #F5F5F5;
+  padding: 16px 16px 14px;
+  margin-top: 11px;
+  margin-bottom: 32px;
+}
+
+.section .active-access {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.section .active-access a {
+  display: flex;
+  gap: 4px;
+}
+
+.section .active-access span {
+  font-family: "Noto Sans";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #7E7E7E;
+}
+
+.section .active-access .vec {
+  width: 8px;
+}
+
+.section .active-access .vec-1 {
+  width: 12px;
+}
+
+.section .active-access-next {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.section .active-access-next a {
+  display: flex;
+  gap: 4px;
+}
+
+.section .product-item {
+  max-width: 796px;
+  margin: auto;
+}
+
+.section .product-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.section .product-img {
+  cursor: pointer;
+}
+
+.section .product-img.on img {
+  max-width: 716px;
+  width: 47.35%;
+}
+
+.section .product-img:last-child {
+  margin-bottom: 269px;
+}
+
+.section .product-img img {
+  max-width: 258px;
+}
+
+.selectModal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.selectModal.on {
+  pointer-events: unset;
+  z-index: 999;
+  opacity: 1;
+}
+
+.selectModal img {
+  max-width: 716px;
+  width: 47.35%;
+}

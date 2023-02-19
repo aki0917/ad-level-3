@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Progrative | Intermesiate | Level 1</title>
+
+    <!-- CSS 読み込み -->
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+
+    <!-- google font 読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  
+    <!-- Tailwind 読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- js読み込み -->
+    <script defer src="./assets/js/index.js"></script>
+    <script defer src="./assets/js/modal.js"></script>
+    
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__left">
+        <img src="./assets/images/header.svg" alt="" />
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="category">
+        <div class="category-heading">
+            <div class="category-heading-item">
+              <ul>
+                <li class="category-select show" data-target="activities">Activities</li>
+                <li class="category-select" data-target="product">Productions</li>
+              </ul>
+            </div>
+          </div>
+      </section>
+
+      <section class="section">
+        <div class="inner">
+          <div id="activities" class="content show">
+            <div class="active-list">
+              <div class="active-item">
+                <h2 class="day">2022</h2>
+                <img src="./assets/images/Ellipse 1.svg" alt="" class="pse">
+                <h3 class="active-ttl">
+                  <span class="text">「若者とコロナ」展を開催</span>
+                  <span class="date">08/20</span>
+                </h3>
+                <div class="active-place">
+                  <p>「若年層のコロナの捉え方」を題材にしたストリートスナップ展をSPAce神宮前にて開催いたしました。</p>
+                  <div class="active-access">
+                    <a href="">
+                      <img src="./assets/images/Vector.svg" alt="" class="vec">
+                      <span>SPAce神宮前</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="active-item">
+                  <img src="./assets/images/Ellipse 1.svg" alt="" class="pse">
+                  <h3 class="active-ttl">
+                    <span class="text">「水と私」を数量限定で販売</span>
+                    <span class="date">08/01</span>
+                  </h3>
+                  <div class="active-place">
+                    <p>フィルム写真集「水と私」を50部限定で販売いたしました。</p>
+                    <div class="active-access">
+                      <a href="">
+                        <img src="./assets/images/Vector-1.svg" alt="" class="vec-1">
+                        <span>https://terrat.studio</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="active-item next">
+                  <h2 class="day">2021</h2>
+                  <img src="./assets/images/Ellipse 1.svg" alt="" class="pse">
+                  <h3 class="active-ttl">
+                    <span class="text">「17:35」を公開</span>
+                    <span class="date">07/24</span>
+                  </h3>
+                  <div class="active-place">
+                    <p>17時35分を題材に私が見た空をデジタルフォトブックとして公開しました。</p>
+                    <div class="active-access">
+                      <a href="">
+                        <img src="./assets/images/Vector-1.svg" alt="" class="vec-1">
+                        <span>https://terrat.studio</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="active-item">
+                  <img src="./assets/images/Ellipse 1.svg" alt="" class="pse">
+                  <h3 class="active-ttl">
+                    <span class="text">ワークショップを開催しました。</span>
+                    <span class="date">07/20</span>
+                  </h3>
+                  <div class="active-place">
+                    <p>ワークショップを開催しました。ワークショップの開催風景は以下からご覧ください。</p>
+                    <div class="active-access">
+                      <a href="">
+                        <img src="./assets/images/Vector-1.svg" alt="" class="vec-1">
+                        <span>https://terrat.studio</span>
+                      </a>
+                      <div class="active-access-next">
+                        <a href="">
+                          <img src="./assets/images/Vector.svg" alt="" class="vec">
+                          <span>SPAce神宮前</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="active-item">
+                  <img src="./assets/images/Ellipse 1.svg" alt="" class="pse">
+                  <h3 class="active-ttl">
+                    <span class="text">ワークショップを開催しました。</span>
+                    <span class="date">07/01</span>
+                  </h3>
+                  <div class="active-place">
+                    <p>「私のストリートスナップ」をテーマにワークショップを開催します。詳細は以下からご覧ください。</p>
+                    <div class="active-access">
+                      <a href="">
+                        <img src="./assets/images/Vector-1.svg" alt="" class="vec-1">
+                        <span>https://terrat.studio</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="active-item">
+                  <img src="./assets/images/Ellipse 1.svg" alt="" class="pse">
+                  <h3 class="active-ttl">
+                    <span class="text">「水と私」を数量限定で販売</span>
+                    <span class="date">08/01</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="product" class="content">
+            <div class="container">
+              <div class="product-item">
+                <div class="product-block">
+                  <div  class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 15.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 17.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 16.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 18.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 20.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 19.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 21.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 23.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 22.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 24.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 26.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 25.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 27.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 29.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 28.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 30.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 32.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 31.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 33.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 35.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 34.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 36.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 38.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 37.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 39.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 41.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 40.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 42.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 44.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 43.png" alt="">
+                  </div>
+                  <div class="product-img actionModal">
+                    <img src="./assets/images/Rectangle 45.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black text-white py-1">
+      <div class="flex justify-center items-center text-sm text-gray1 font-noto font-bold">© Progrative by <span class="font-roboto ml-1"> TERRART 2022</span>.</div>
+    </footer>
+
+    <div id="modal" class="selectModal">
+      <img src="./assets/images/Rectangle 16.png" alt="">
+    </div>
+  </body>
+</html>
