@@ -9,4 +9,3 @@
 - JavaScript
 - Vercel
 - Git Hub
-  # ad-level-3
